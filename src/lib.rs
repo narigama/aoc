@@ -1,15 +1,23 @@
+pub mod y2024;
+
 use std::{io::Write, str::FromStr, sync::Arc};
 
 use eyre::OptionExt;
 
 pub type Result<T> = eyre::Result<T>;
 
+#[derive(Debug)]
+pub struct Pair<T> {
+    left: T,
+    right: T,
+}
+
 pub const BASE_URL: &str = "https://adventofcode.com";
 
 pub fn get_input(year: u64, day: u64) -> Result<String> {
     // validate input
     eyre::ensure!((2015..=2024).contains(&year), "aoc years must be between 2015 and 2024");
-    eyre::ensure!((01..=25).contains(&day), "aoc days must be between 01 and 25");
+    eyre::ensure!((1..=25).contains(&day), "aoc days must be between 01 and 25");
 
     let input_path = std::path::PathBuf::new().join("input").join(format!("{year}")).join(format!("{day:0>2}.txt"));
     if !input_path.is_file() {
