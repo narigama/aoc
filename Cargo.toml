@@ -1,0 +1,13 @@
+[package]
+name = "aoc"
+
+edition = "2021"
+version = "0.1.0"
+
+[dependencies]
+clap               = { version = "4.5.21", features = ["derive"] }
+dotenvy            = { version = "0.15.7" }
+eyre               = { version = "0.6.12" }
+reqwest            = { version = "0.12.9", features = ["blocking", "cookies"] }
+tracing            = { version = "0.1.41" }
+tracing-subscriber = { version = "0.3.19" }
