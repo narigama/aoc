@@ -1,5 +1,6 @@
 ### AoC ###
 input/
+.vscode/*.json
 .env*
 tmp*
 

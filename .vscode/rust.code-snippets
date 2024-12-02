@@ -1,0 +1,6 @@
+{
+    "Result": {
+        "prefix": "res",
+        "body": "crate::Result<$1>"
+    }
+}
