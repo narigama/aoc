@@ -21,10 +21,9 @@ pub fn part_one(input: &[Vec<u64>]) -> u64 {
 pub fn part_two(input: &[Vec<u64>]) -> u64 {
     input
         .iter()
-        .cloned()
-        .filter(|report| {
+        .filter(|&report| {
             // if this report is already safe, skip further checks
-            if check_report(&report) {
+            if check_report(report) {
                 return true;
             }
 

@@ -1,6 +1,50 @@
 {
     "Result": {
         "prefix": "res",
-        "body": "crate::Result<$1>"
+        "body": "crate::Result<()>"
+    },
+    "Template": {
+        "prefix": "template",
+        "body": [
+            "pub fn get_input() -> crate::Result<()> {",
+            "    let input = crate::get_input($1, $2)?;",
+            "    todo!()",
+            "}",
+            "",
+            "pub fn part_one(input: &()) -> u64 {",
+            "    todo!()",
+            "}",
+            "",
+            "pub fn part_two(input: &()) -> u64 {",
+            "    todo!()",
+            "}",
+            "",
+            "pub fn main() -> crate::Result<()> {",
+            "    let input = get_input()?;",
+            "",
+            "    tracing::info!(\"y$1d$2p01: {}\", part_one(&input));",
+            "    tracing::info!(\"y$1d$2p02: {}\", part_two(&input));",
+            "",
+            "    Ok(())",
+            "}",
+            "",
+            "#[cfg(test)]",
+            "mod tests {",
+            "    use super::*;",
+            "",
+            "    #[test]",
+            "    fn y$1d$2p01() {",
+            "        let input = get_input().unwrap();",
+            "        assert_eq!(part_one(&input), 0);",
+            "    }",
+            "",
+            "    #[test]",
+            "    fn y$1d$2p02() {",
+            "        let input = get_input().unwrap();",
+            "        assert_eq!(part_two(&input), 0);",
+            "    }",
+            "}",
+            "",
+        ]
     }
 }

@@ -8,6 +8,7 @@ version = "0.1.0"
 dotenvy            = { version = "0.15.7" }
 eyre               = { version = "0.6.12" }
 itertools          = { version = "0.13.0" }
+regex = "1.11.1"
 reqwest            = { version = "0.12.9", features = ["blocking", "cookies"] }
 tracing            = { version = "0.1.41" }
 tracing-subscriber = { version = "0.3.19" }
@@ -22,3 +23,7 @@ name    = "y2024d01"
 [[bench]]
 harness = false
 name    = "y2024d02"
+
+[[bench]]
+harness = false
+name    = "y2024d03"
