@@ -1,7 +1,7 @@
 {
     "Result": {
         "prefix": "res",
-        "body": "crate::Result<()>"
+        "body": "crate::Result<${1:()}>"
     },
     "Template": {
         "prefix": "template",

@@ -4,7 +4,8 @@ use std::{io::Write, str::FromStr, sync::Arc};
 
 use eyre::OptionExt;
 
-pub type Result<T> = eyre::Result<T>;
+pub type Error = eyre::ErrReport;
+pub type Result<T> = std::result::Result<T, Error>;
 
 #[derive(Debug)]
 pub struct Pair<T> {

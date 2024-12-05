@@ -27,3 +27,7 @@ name    = "y2024d02"
 [[bench]]
 harness = false
 name    = "y2024d03"
+
+[[bench]]
+harness = false
+name    = "y2024d04"
