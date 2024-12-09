@@ -3,6 +3,10 @@
         "prefix": "res",
         "body": "crate::Result<${1:()}>"
     },
+    "Error": {
+        "prefix": "err",
+        "body": "crate::Error"
+    },
     "Template": {
         "prefix": "template",
         "body": [
