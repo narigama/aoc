@@ -7,7 +7,7 @@ use eyre::OptionExt;
 pub type Error = eyre::ErrReport;
 pub type Result<T> = std::result::Result<T, Error>;
 
-#[derive(Debug)]
+#[derive(Debug, PartialEq, Eq, PartialOrd, Ord)]
 pub struct Pair<T> {
     left: T,
     right: T,
