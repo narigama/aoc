@@ -3,6 +3,7 @@ pub mod d02;
 pub mod d03;
 pub mod d04;
 pub mod d05;
+pub mod d06;
 
 pub fn main() -> crate::Result<()> {
     d01::main()?;
@@ -10,6 +11,7 @@ pub fn main() -> crate::Result<()> {
     d03::main()?;
     d04::main()?;
     d05::main()?;
+    d06::main()?;
 
     Ok(())
 }
