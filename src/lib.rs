@@ -1,3 +1,4 @@
+pub mod util;
 pub mod y2024;
 
 use std::{io::Write, str::FromStr, sync::Arc};
